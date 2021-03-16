@@ -4,7 +4,7 @@ This is a real calculator made using react.
 I did split Display and ButtonPanel as main components and used Tailwind CSS to give UI style.
 
 ## LIVE DEMO
-No Demo yet.
+[Click Here to See Live Demo](https://react-calculator-sdog.herokuapp.com/)
 
 ## Built With
 
