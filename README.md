@@ -34,7 +34,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - [Microverse](https://www.microverse.org/).
-- Game Background: https://craftpix.net/
 
 ## 📝 License
 
