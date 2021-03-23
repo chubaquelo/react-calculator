@@ -31,7 +31,7 @@ class App extends React.Component {
         break;
       case '+/-':
         if (total.includes('-')) {
-          this.setState({ total: 'sin -' });
+          this.setState(prevState => ({ total: (parseFloat(prevState.total) * -1).toString() }));
         } else {
           this.setState(prevState => ({ total: '-'.concat(prevState.total) }));
         }
