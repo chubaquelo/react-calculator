@@ -14,7 +14,7 @@ const operate = (numOne, numTwo, operation) => {
       result = first.minus(second);
       break;
 
-    case 'X':
+    case 'x':
       result = first.times(second);
       break;
 
@@ -29,7 +29,7 @@ const operate = (numOne, numTwo, operation) => {
     default:
       break;
   }
-  window.console.log(result);
+  window.console.log(result.toString());
   return result;
 };
 

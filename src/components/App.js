@@ -16,9 +16,6 @@ class App extends React.Component {
     this.handleEqual = this.handleEqual.bind(this);
   }
 
-  // componentDidUpdate() {
-  // }
-
   updateCalcData = input => {
     const { total, operation, next } = this.state;
 
@@ -26,10 +23,17 @@ class App extends React.Component {
       case '+':
       case '-':
       case '/':
-      case 'X':
+      case 'x':
       case '%':
-        if (parseFloat(total, 10) > 0) {
+        if (parseFloat(total, 10) !== 0) {
           this.setState({ operation: input });
+        }
+        break;
+      case '+/-':
+        if (total.includes('-')) {
+          this.setState({ total: 'sin -' });
+        } else {
+          this.setState(prevState => ({ total: '-'.concat(prevState.total) }));
         }
         break;
       case 'AC':
@@ -82,7 +86,7 @@ class App extends React.Component {
     const { total, operation, next } = this.state;
     let result = '';
     if (
-      total > 0
+      total !== 0
       && operation !== ''
       && next > 0
     ) {

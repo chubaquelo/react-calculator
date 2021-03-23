@@ -32,7 +32,7 @@ export default function ButtonPanel({ updateCalc, handleEqual }) {
         <Button btnName="8" updateCalc={updateCalc} addClass="text-3xl" />
         <Button btnName="9" updateCalc={updateCalc} addClass="text-3xl" />
         <Button
-          btnName="X"
+          btnName="x"
           updateCalc={updateCalc}
           addClass="bg-blue-300 hover:bg-blue-600"
         />
