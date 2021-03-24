@@ -1,33 +1,33 @@
 // import Big from "big.js";
 
-const calculate = input => {
-  const { total, operation, next } = input;
+const calculate = (calcData, btnName) => {
+  const { total, operation, next } = calcData;
+  let res;
 
-  switch (input) {
+  switch (btnName) {
     case '+':
     case '-':
     case '/':
     case 'x':
     case '%':
       if (parseFloat(total, 10) !== 0) {
-        this.setState({ operation: input });
+        return ({ operation: btnName });
       }
       break;
     case '+/-':
       if (total.includes('-')) {
-        this.setState({ total: 'sin -' });
+        res = ({ total: 'sin -' });
       } else {
-        this.setState(prevState => ({ total: '-'.concat(prevState.total) }));
+        res = (prevState => ({ total: '-'.concat(prevState.total) }));
       }
-      break;
+      return res;
     case 'AC':
-      this.setState({
+      res = ({
         total: '0',
         next: '',
         operation: '',
       });
-      window.console.log('Set to 0 with AC.');
-      break;
+      return res;
     case '1':
     case '2':
     case '3':
@@ -39,27 +39,29 @@ const calculate = input => {
     case '9':
     case '0':
       if (operation !== '') {
-        this.setState(prevState => ({ next: prevState.next + input }));
+        return (prevState => ({ next: prevState.next + btnName }));
       }
       if (total === '0' && operation === '') {
-        this.setState({ total: input });
+        window.console.log('primer numero');
+        res = { total: btnName };
       } else if (next === '' && operation === '') {
-        this.setState(prevState => ({ total: prevState.total + input }));
+        res = (prevState => ({ total: prevState.total + btnName }));
       }
-      break;
+      return res;
     case '.':
       if (operation !== '' && !next.includes('.')) {
-        this.setState(prevState => ({ next: prevState.next + input }));
+        return (prevState => ({ next: prevState.next + btnName }));
       }
       if (total === '0' && operation === '') {
-        this.setState({ total: input });
+        res = ({ total: btnName });
       } else if (next === '' && operation === '' && !total.includes('.')) {
-        this.setState(prevState => ({ total: prevState.total + input }));
+        res = (prevState => ({ total: prevState.total + btnName }));
       }
-      break;
+      return res;
     default:
       break;
   }
+  return null;
 };
 
 export default calculate;
