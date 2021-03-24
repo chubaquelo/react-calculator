@@ -29,7 +29,6 @@ const operate = (numOne, numTwo, operation) => {
     default:
       break;
   }
-  window.console.log(result.toString());
   return result;
 };
 

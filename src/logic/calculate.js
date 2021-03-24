@@ -1,5 +1,3 @@
-// import Big from "big.js";
-
 const calculate = (calcData, btnName) => {
   const { total, operation, next } = calcData;
   let res;
@@ -42,7 +40,6 @@ const calculate = (calcData, btnName) => {
         return (prevState => ({ next: prevState.next + btnName }));
       }
       if (total === '0' && operation === '') {
-        window.console.log('primer numero');
         res = { total: btnName };
       } else if (next === '' && operation === '') {
         res = (prevState => ({ total: prevState.total + btnName }));
