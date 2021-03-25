@@ -1,7 +1,11 @@
 # React Calculator
 
 This is a real calculator made using react.
-I did split Display and ButtonPanel as main components and used Tailwind CSS to give UI style.
+Its components are App, Display, ButtonPanel and Button.
+Logic was separated into calculate.js and operate.js files, into ./src/logic folder.
+Styling was made with Tailwind CSS.
+
+The calculator can manage float numbers and you can: +, -, /, *, %, A/C and +/- .
 
 ## LIVE DEMO
 [Click Here to See Live Demo](https://react-calculator-sdog.herokuapp.com/)
@@ -10,8 +14,9 @@ I did split Display and ButtonPanel as main components and used Tailwind CSS to 
 
 - HTML + CSS
 - Tailwind CSS
+- React.js
 - JavaScript, ES6
-- React
+- Big.js library for managing big numbers
 - NPM
 - ESLINT + Stylelint
 
