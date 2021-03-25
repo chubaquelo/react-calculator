@@ -14,7 +14,7 @@ const calculate = (calcData, btnName) => {
       break;
     case '+/-':
       if (total.includes('-')) {
-        res = ({ total: 'sin -' });
+        res = prevState => ({ total: (parseFloat(prevState.total) * -1).toString() });
       } else {
         res = (prevState => ({ total: '-'.concat(prevState.total) }));
       }
