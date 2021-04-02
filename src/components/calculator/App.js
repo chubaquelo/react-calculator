@@ -1,8 +1,8 @@
 import React from 'react';
-import operate from '../logic/operate';
+import operate from './logic/operate';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
-import calculate from '../logic/calculate';
+import calculate from './logic/calculate';
 
 class App extends React.Component {
   constructor(props) {
