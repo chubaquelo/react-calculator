@@ -13,7 +13,7 @@ function Index() {
       <header className="absolute top-0 left-0 w-full">
         <Navbar />
       </header>
-      <main>
+      <main className="p-4 pt-10 w-full flex flex-col min-h-screen">
         <Switch>
           <Route exact path="/">
             <Home />

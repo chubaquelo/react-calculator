@@ -41,12 +41,14 @@ class App extends React.Component {
   render() {
     const { total, next, operation } = this.state;
     return (
-      <div className="w-4/5 sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4">
-        <Display total={total} next={next} operation={operation} />
-        <ButtonPanel
-          updateCalc={this.updateCalcData}
-          handleEqual={this.handleEqual}
-        />
+      <div className="w-screen text-center flex justify-center">
+        <div className="w-4/5 sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4">
+          <Display total={total} next={next} operation={operation} />
+          <ButtonPanel
+            updateCalc={this.updateCalcData}
+            handleEqual={this.handleEqual}
+          />
+        </div>
       </div>
     );
   }
