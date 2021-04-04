@@ -9,22 +9,26 @@ const calculate = (calcData, btnName) => {
     case 'x':
     case '%':
       if (parseFloat(total, 10) !== 0) {
-        return ({ operation: btnName });
+        return { ...calcData, operation: btnName };
       }
-      break;
+      return { ...calcData };
     case '+/-':
       if (total.includes('-')) {
-        res = prevState => ({ total: (parseFloat(prevState.total) * -1).toString() });
+        res = {
+          ...calcData,
+          total: (parseFloat(total) * -1).toString(),
+        };
       } else {
-        res = (prevState => ({ total: '-'.concat(prevState.total) }));
+        // res = (prevState => ({ total: '-'.concat(prevState.total) }));
+        res = { ...calcData, total: '-'.concat(total) };
       }
       return res;
     case 'AC':
-      res = ({
+      res = {
         total: '0',
         next: '',
         operation: '',
-      });
+      };
       return res;
     case '1':
     case '2':
@@ -37,22 +41,28 @@ const calculate = (calcData, btnName) => {
     case '9':
     case '0':
       if (operation !== '') {
-        return (prevState => ({ next: prevState.next + btnName }));
+        // return (prevState => ({ next: prevState.next + btnName }));
+        return { ...calcData, next: next + btnName };
       }
       if (total === '0' && operation === '') {
-        res = { total: btnName };
+        res = { ...calcData, total: btnName };
       } else if (next === '' && operation === '') {
-        res = (prevState => ({ total: prevState.total + btnName }));
+        res = {
+          ...calcData,
+          total: total + btnName,
+        };
       }
       return res;
     case '.':
       if (operation !== '' && !next.includes('.')) {
-        return (prevState => ({ next: prevState.next + btnName }));
+        // return (prevState => ({ next: prevState.next + btnName }));
+        return { ...calcData, next: next + btnName };
       }
       if (total === '0' && operation === '') {
-        res = ({ total: btnName });
+        res = { ...calcData, total: btnName };
       } else if (next === '' && operation === '' && !total.includes('.')) {
-        res = (prevState => ({ total: prevState.total + btnName }));
+        // res = (prevState) => ({ total: prevState.total + btnName });
+        res = { ...calcData, total: total + btnName };
       }
       return res;
     default:
