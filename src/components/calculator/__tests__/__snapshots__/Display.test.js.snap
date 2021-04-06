@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Display Snapshot matches Display snapshot 1`] = `
+<div
+  className="break-all text-right bg-black text-white text-5xl w-full h-18 p-2 flex justify-end items-end rounded-t-lg border-white border-4 border-b-0 select-all"
+>
+  0function () { [native code] }function () { [native code] }
+</div>
+`;

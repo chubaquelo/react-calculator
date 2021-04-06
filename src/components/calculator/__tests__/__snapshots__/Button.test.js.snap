@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Button Snapshot matches Button snapshot 1`] = `
+<button
+  className="border-white select-none border-2 w-1/4 h-12 flex justify-center items-center bg-red-500 text-white font-black cursor-pointer hover:bg-red-900 text-xl "
+  onClick={[Function]}
+  type="button"
+>
+  NONE
+</button>
+`;

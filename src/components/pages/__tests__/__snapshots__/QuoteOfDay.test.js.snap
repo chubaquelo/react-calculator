@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test QuoteOfDay Snapshot matches QuoteOfDay snapshot 1`] = `
+<div
+  className="text-center"
+>
+  <h1
+    className="text-3xl text-center mb-4"
+  >
+    Quote of the Day
+  </h1>
+  <p
+    className="text-lg"
+  >
+    Without mathematics, there's nothing you can do. Everything around you is mathematics. Everything around you is numbers.
+  </p>
+  <h3
+    className="font-bold"
+  >
+    Shakuntala Devi
+  </h3>
+  <img
+    alt="Maths"
+    className="mt-4 mx-auto"
+    src="./maths.jpg"
+  />
+</div>
+`;
