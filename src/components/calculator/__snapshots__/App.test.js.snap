@@ -1,0 +1,170 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test App Snapshot matches App snapshot 1`] = `
+<div
+  className="w-screen text-center flex justify-center"
+>
+  <div
+    className="w-4/5 sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4"
+  >
+    <div
+      className="break-all text-right bg-black text-white text-5xl w-full h-18 p-2 flex justify-end items-end rounded-t-lg border-white border-4 border-b-0 select-all"
+    >
+      0
+    </div>
+    <div
+      className="w-full border-white border-4 border-b-0 flex flex-wrap"
+    >
+      <button
+        className="border-white select-none border-2 w-1/4 h-12 flex justify-center items-center bg-red-500 text-white font-black cursor-pointer hover:bg-red-900 text-xl bg-blue-300 hover:bg-blue-600"
+        onClick={[Function]}
+        type="button"
+      >
+        AC
+      </button>
+      <button
+        className="border-white select-none border-2 w-1/4 h-12 flex justify-center items-center bg-red-500 text-white font-black cursor-pointer hover:bg-red-900 text-xl bg-blue-300 hover:bg-blue-600"
+        onClick={[Function]}
+        type="button"
+      >
+        +/-
+      </button>
+      <button
+        className="border-white select-none border-2 w-1/4 h-12 flex justify-center items-center bg-red-500 text-white font-black cursor-pointer hover:bg-red-900 text-xl bg-blue-300 hover:bg-blue-600"
+        onClick={[Function]}
+        type="button"
+      >
+        %
+      </button>
+      <button
+        className="border-white select-none border-2 w-1/4 h-12 flex justify-center items-center bg-red-500 text-white font-black cursor-pointer hover:bg-red-900 text-xl bg-blue-300 hover:bg-blue-600"
+        onClick={[Function]}
+        type="button"
+      >
+        /
+      </button>
+    </div>
+    <div
+      className="w-full border-white border-4 border-b-0 flex flex-wrap"
+    >
+      <button
+        className="border-white select-none border-2 w-1/4 h-12 flex justify-center items-center bg-red-500 text-white font-black cursor-pointer hover:bg-red-900 text-xl text-3xl"
+        onClick={[Function]}
+        type="button"
+      >
+        7
+      </button>
+      <button
+        className="border-white select-none border-2 w-1/4 h-12 flex justify-center items-center bg-red-500 text-white font-black cursor-pointer hover:bg-red-900 text-xl text-3xl"
+        onClick={[Function]}
+        type="button"
+      >
+        8
+      </button>
+      <button
+        className="border-white select-none border-2 w-1/4 h-12 flex justify-center items-center bg-red-500 text-white font-black cursor-pointer hover:bg-red-900 text-xl text-3xl"
+        onClick={[Function]}
+        type="button"
+      >
+        9
+      </button>
+      <button
+        className="border-white select-none border-2 w-1/4 h-12 flex justify-center items-center bg-red-500 text-white font-black cursor-pointer hover:bg-red-900 text-xl bg-blue-300 hover:bg-blue-600"
+        onClick={[Function]}
+        type="button"
+      >
+        x
+      </button>
+    </div>
+    <div
+      className="w-full border-white border-4 border-b-0 flex flex-wrap"
+    >
+      <button
+        className="border-white select-none border-2 w-1/4 h-12 flex justify-center items-center bg-red-500 text-white font-black cursor-pointer hover:bg-red-900 text-xl text-3xl"
+        onClick={[Function]}
+        type="button"
+      >
+        4
+      </button>
+      <button
+        className="border-white select-none border-2 w-1/4 h-12 flex justify-center items-center bg-red-500 text-white font-black cursor-pointer hover:bg-red-900 text-xl text-3xl"
+        onClick={[Function]}
+        type="button"
+      >
+        5
+      </button>
+      <button
+        className="border-white select-none border-2 w-1/4 h-12 flex justify-center items-center bg-red-500 text-white font-black cursor-pointer hover:bg-red-900 text-xl text-3xl"
+        onClick={[Function]}
+        type="button"
+      >
+        6
+      </button>
+      <button
+        className="border-white select-none border-2 w-1/4 h-12 flex justify-center items-center bg-red-500 text-white font-black cursor-pointer hover:bg-red-900 text-xl bg-blue-300 hover:bg-blue-600"
+        onClick={[Function]}
+        type="button"
+      >
+        -
+      </button>
+    </div>
+    <div
+      className="w-full border-white border-4 border-b-0 flex flex-wrap"
+    >
+      <button
+        className="border-white select-none border-2 w-1/4 h-12 flex justify-center items-center bg-red-500 text-white font-black cursor-pointer hover:bg-red-900 text-xl text-3xl"
+        onClick={[Function]}
+        type="button"
+      >
+        1
+      </button>
+      <button
+        className="border-white select-none border-2 w-1/4 h-12 flex justify-center items-center bg-red-500 text-white font-black cursor-pointer hover:bg-red-900 text-xl text-3xl"
+        onClick={[Function]}
+        type="button"
+      >
+        2
+      </button>
+      <button
+        className="border-white select-none border-2 w-1/4 h-12 flex justify-center items-center bg-red-500 text-white font-black cursor-pointer hover:bg-red-900 text-xl text-3xl"
+        onClick={[Function]}
+        type="button"
+      >
+        3
+      </button>
+      <button
+        className="border-white select-none border-2 w-1/4 h-12 flex justify-center items-center bg-red-500 text-white font-black cursor-pointer hover:bg-red-900 text-xl bg-blue-300 hover:bg-blue-600"
+        onClick={[Function]}
+        type="button"
+      >
+        +
+      </button>
+    </div>
+    <div
+      className="w-full border-white border-4 flex flex-wrap"
+    >
+      <button
+        className="border-white select-none border-2 w-1/4 h-12 flex justify-center items-center bg-red-500 text-white font-black cursor-pointer hover:bg-red-900 text-xl w-2/4 text-3xl"
+        onClick={[Function]}
+        type="button"
+      >
+        0
+      </button>
+      <button
+        className="border-white select-none border-2 w-1/4 h-12 flex justify-center items-center bg-red-500 text-white font-black cursor-pointer hover:bg-red-900 text-xl text-3xl"
+        onClick={[Function]}
+        type="button"
+      >
+        .
+      </button>
+      <button
+        className="border-white select-none border-2 w-1/4 h-12 flex justify-center items-center bg-red-500 text-white font-black cursor-pointer hover:bg-red-900 text-xl text-3xl bg-blue-400 hover:bg-blue-900"
+        onClick={[Function]}
+        type="button"
+      >
+        =
+      </button>
+    </div>
+  </div>
+</div>
+`;
