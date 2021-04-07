@@ -47,12 +47,12 @@ describe('calc buttons works correctly', () => {
   });
 
   it("operation button does nothing when no total num yet", () => {
-    const calcData = { total: "", operation: "", next: "" };
+    const calcData = { total: "0", operation: "", next: "" };
     const btnName = "+";
-    expect(calculate(calcData, btnName).total).toBe("");
+    expect(calculate(calcData, btnName).total).toBe("0");
     expect(calculate(calcData, btnName).total).not.toBe("+");
-    // expect(calculate(calcData, btnName).operation).toBe("");
-    // expect(calculate(calcData, btnName).operation).not.toBe("+");
+    expect(calculate(calcData, btnName).operation).toBe("");
+    expect(calculate(calcData, btnName).operation).not.toBe("+");
     expect(calculate(calcData, btnName).next).toBe("");
     expect(calculate(calcData, btnName).next).not.toBe("+");
   });
@@ -76,13 +76,13 @@ describe('calc buttons works correctly', () => {
     expect(calculate(calcData, btnName).next).not.toBe("");
 
     
-    // calcData = { total: "2.2", operation: "+", next: "2.2" };
-    // expect(calculate(calcData, btnName).total).toBe("2.2");
-    // expect(calculate(calcData, btnName).total).not.toBe("2.2.");
-    // expect(calculate(calcData, btnName).operation).toBe("+");
-    // expect(calculate(calcData, btnName).operation).not.toBe("+.");
-    // expect(calculate(calcData, btnName).next).toBe("2.2");
-    // expect(calculate(calcData, btnName).next).not.toBe("2.2.");
+    calcData = { total: "2.2", operation: "+", next: "2.2" };
+    expect(calculate(calcData, btnName).total).toBe("2.2");
+    expect(calculate(calcData, btnName).total).not.toBe("2.2.");
+    expect(calculate(calcData, btnName).operation).toBe("+");
+    expect(calculate(calcData, btnName).operation).not.toBe("+.");
+    expect(calculate(calcData, btnName).next).toBe("2.2");
+    expect(calculate(calcData, btnName).next).not.toBe("2.2.");
   });
 })
 

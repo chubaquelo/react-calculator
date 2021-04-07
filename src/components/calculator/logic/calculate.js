@@ -56,9 +56,10 @@ const calculate = (calcData, btnName) => {
     case '.':
       if (operation !== '' && !next.includes('.')) {
         // return (prevState => ({ next: prevState.next + btnName }));
-        return { ...calcData, next: next + btnName };
-      }
-      if (total === '0' && operation === '') {
+        res = { ...calcData, next: next + btnName };
+      } else if (operation !== '' && next.includes('.')) {
+        res = { ...calcData };
+      } else if (total === '0' && operation === '') {
         res = { ...calcData, total: btnName };
       } else if (next === '' && operation === '' && !total.includes('.')) {
         // res = (prevState) => ({ total: prevState.total + btnName });
