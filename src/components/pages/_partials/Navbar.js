@@ -23,7 +23,7 @@ export default function Navbar() {
   );
 
   const desktopMenu = (
-    <ol className="hidden md:flex flex-row w-3/12 justify-around">
+    <ol className="hidden md:flex flex-row w-1/3 justify-around">
       {menuLinks}
     </ol>
   );
@@ -56,7 +56,7 @@ export default function Navbar() {
   return (
     <>
       <nav className={toggleMobileMenu ? 'hidden' : 'flex flex-row justify-between h-14 bg-blue-700 text-white text-xl p-3'}>
-        <div>
+        <div className="w-2/3 md:w-1/3">
           <h1 className="text-3xl mb-3">MATH MAGICIANS</h1>
         </div>
         {desktopMenu}
