@@ -37,13 +37,15 @@ export default function Navbar() {
   );
 
   return (
-    <nav className="flex flex-row justify-between h-14 bg-blue-700 text-white text-xl p-3">
-      <div>
-        <h1 className="text-3xl mb-3">MATH MAGICIANS</h1>
-      </div>
-      {desktopMenu}
-      {mobileMenuBtn}
+    <>
+      <nav className={toggleMobileMenu ? 'hidden' : 'flex flex-row justify-between h-14 bg-blue-700 text-white text-xl p-3'}>
+        <div>
+          <h1 className="text-3xl mb-3">MATH MAGICIANS</h1>
+        </div>
+        {desktopMenu}
+        {mobileMenuBtn}
+      </nav>
       {toggleMobileMenu && mobileMenu}
-    </nav>
+    </>
   );
 }
