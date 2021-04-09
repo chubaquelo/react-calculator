@@ -22,6 +22,9 @@ The calculator can manage float numbers and you can: +, -, /, *, %, A/C and +/- 
 - NPM
 - ESLINT + Stylelint
 
+## Responsive Menu for Mobile
+
+<img align="center" src="https://i.imgur.com/tmrXUk9.gif" width="420px" />
 
 ## Available Scripts
 
