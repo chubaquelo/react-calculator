@@ -10,10 +10,10 @@ import './index.css';
 function Index() {
   return (
     <Router>
-      <header className="absolute top-0 left-0 w-full">
+      <header className="sticky top-0 w-full">
         <Navbar />
       </header>
-      <main className="p-4 pt-10 w-full flex flex-col min-h-screen">
+      <main className="p-4 pt-10 w-full flex flex-col">
         <Switch>
           <Route exact path="/">
             <Home />
