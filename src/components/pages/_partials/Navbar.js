@@ -4,27 +4,44 @@ import { Link } from 'react-router-dom';
 export default function Navbar() {
   const [toggleMobileMenu, setToggleMobileMenu] = useState(false);
 
+  const handleToggleMobileMenu = () => {
+    setToggleMobileMenu(state => !state);
+  };
+
+  const menuLinks = (
+    <>
+      <li>
+        <Link onClick={() => setToggleMobileMenu(false)} to="/">Home</Link>
+      </li>
+      <li>
+        <Link onClick={() => setToggleMobileMenu(false)} to="/calculator">Calculator</Link>
+      </li>
+      <li>
+        <Link onClick={() => setToggleMobileMenu(false)} to="/quote">Quote of Day</Link>
+      </li>
+    </>
+  );
+
   const desktopMenu = (
     <ol className="hidden md:flex flex-row w-3/12 justify-around">
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <Link to="/calculator">Calculator</Link>
-      </li>
-      <li>
-        <Link to="/quote">Quote of Day</Link>
-      </li>
+      {menuLinks}
     </ol>
   );
 
   const mobileMenu = (
-    <div className="absolute w-screen h-screen bg-black text-white">Hello there</div>
+    <div className="absolute w-screen h-screen bg-black text-white p-4">
+      <button
+        type="button"
+        onClick={handleToggleMobileMenu}
+        className="text-white w-11 h-11 text-6xl absolute top-5 right-5"
+      >
+        x
+      </button>
+      <ol className="h-full flex flex-col w-11/12 py-20 px-5 text-5xl items-center justify-evenly">
+        {menuLinks}
+      </ol>
+    </div>
   );
-
-  const handleToggleMobileMenu = () => {
-    setToggleMobileMenu(state => !state);
-  };
 
   const mobileMenuBtn = (
     <button
