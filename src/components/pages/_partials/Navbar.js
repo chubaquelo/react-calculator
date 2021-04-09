@@ -37,7 +37,7 @@ export default function Navbar() {
       >
         x
       </button>
-      <ol className="h-full flex flex-col w-11/12 py-20 px-5 text-5xl items-center justify-evenly">
+      <ol className="h-full flex flex-col w-11/12 pb-40 pt-10 px-5 text-5xl items-center justify-evenly">
         {menuLinks}
       </ol>
     </div>
