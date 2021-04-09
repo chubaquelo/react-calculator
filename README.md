@@ -10,7 +10,7 @@ The calculator can manage float numbers and you can: +, -, /, *, %, A/C and +/- 
 ## LIVE DEMO
 [Click Here to See Live Demo](https://react-calculator-sdog.herokuapp.com/)
 
-![Screenshot](https://i.imgur.com/hUnajfK.gif)
+![Screenshot](https://i.imgur.com/D9wuoeo.gif)
 
 ## Built With
 
