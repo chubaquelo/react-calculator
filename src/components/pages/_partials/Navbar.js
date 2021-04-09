@@ -17,7 +17,7 @@ export default function Navbar() {
         <Link onClick={() => setToggleMobileMenu(false)} to="/calculator">Calculator</Link>
       </li>
       <li>
-        <Link onClick={() => setToggleMobileMenu(false)} to="/quote">Quote of Day</Link>
+        <Link onClick={() => setToggleMobileMenu(false)} to="/quote">Quote</Link>
       </li>
     </>
   );
@@ -56,8 +56,8 @@ export default function Navbar() {
   return (
     <>
       <nav className={toggleMobileMenu ? 'hidden' : 'flex flex-row justify-between h-14 bg-blue-700 text-white text-xl p-3'}>
-        <div className="w-2/3 md:w-1/3">
-          <h1 className="text-3xl mb-3">MATH MAGICIANS</h1>
+        <div className="w-3/4 md:w-1/3">
+          <h1 className="text-2xl md:text-3xl mb-3">MATH MAGICIANS</h1>
         </div>
         {desktopMenu}
         {mobileMenuBtn}
